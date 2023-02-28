@@ -5,7 +5,7 @@
 }
 nav {
   display: flex;
-  background-color: #895a5a;
+  background-color: transparent;
   height: 80px;
   width: 100%;
 }
@@ -18,21 +18,50 @@ nav {
   display: flex;
   align-items: center;
   padding-left: 50px;
+  font-size: xx-large;
+  border: black;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   padding-right: 50px;
-  color: antiquewhite;
+  color: black;
   font-size: 20px;
 }
+
 .btn {
   padding: 10px;
   margin: 10px;
   border: none;
-  background-color: #895a5a;
-  color: antiquewhite;
+  color: black;
   font-size: 20px;
   cursor: pointer;
+  border-radius: 10px;
+}
+.btnnew {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  background-color: #895a5a;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.btn:hover {
+  background-color: rgb(200, 200, 200);
+  color: black;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/* quiero que mi container2 aparezca en medio de la pantalla con un h1 */
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 84vh;
+  width: 100%;
 }
