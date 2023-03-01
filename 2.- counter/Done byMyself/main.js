@@ -1,30 +1,29 @@
+// set the initial count
 let count = 0;
-
-const number = document.getElementById("number");
-const buttons = document.querySelectorAll(".btn");
-
-buttons.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
+// select value and buttons
+const value = document.querySelector('#value');
+const btns = document.querySelectorAll('.btn');
+btns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
         const styles = e.currentTarget.classList;
-        if (styles.contains("decrease")) {
+        if (styles.contains('decrease')) {
             count--;
-        }
-        else if (styles.contains("increase")) {
+        } else if (styles.contains('increase')) {
             count++;
-        }
-        else {
+        } else {    
             count = 0;
         }
         if (count > 0) {
-            number.style.color = "green";
+            value.style.color = 'green';
+            value.textContent = count;
         }
         if (count < 0) {
-            number.style.color = "red";
-            number.textContent = count;
+            value.style.color = 'red';
+            value.textContent = count;
         }
         if (count === 0) {
-            number.style.color = "#222";
+            value.style.color = '#222';
+            value.textContent = count;
         }
-        number.textContent = count;
     });
 });
