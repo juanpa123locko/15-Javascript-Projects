@@ -72,3 +72,35 @@ const menu = [
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
 ];
+
+// seleccione el elemento con la clase section-center y guardelo en una constante
+const sectionCenter = document.querySelector(".section-center");
+
+
+// hice una escucha al evento DOMContentLoaded para que se ejecute cuando el documento HTML haya sido completamente cargado y parseado
+window.addEventListener("DOMContentLoaded", function () {
+  displayMenuItems(menu);
+});
+
+function displayMenuItems(menuItems) {
+  let displayMenu = menuItems.map(function (item) {
+    console.log(item);
+    return `
+      <!-- single item -->
+      <article class="menu-item">
+        <img src="${item.img}" alt="${item.title}">
+        <div class="item-info">
+          <header>
+            <h4>${item.title}</h4>
+            <h4 class="price">$${item.price}</h4>
+          </header>
+          <p class="item-text">
+          ${item.desc}
+          </p>
+        </div>
+      </article>
+`;
+  });
+  displayMenu = displayMenu.join("");
+  sectionCenter.innerHTML = displayMenu;
+}
