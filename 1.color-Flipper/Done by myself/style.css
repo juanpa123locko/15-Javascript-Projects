@@ -65,3 +65,25 @@ nav {
   height: 84vh;
   width: 100%;
 }
+.tutorial {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.links {
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  transform: scale(1.1 0.2s);
+}
+.links:hover {
+  text-decoration: underline;
+}
