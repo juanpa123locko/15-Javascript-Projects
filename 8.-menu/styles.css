@@ -262,3 +262,11 @@ Menu
     height: 150px;
   }
 }
+nav ul {
+  z-index: -100;
+  position: absolute;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  margin: 20px 0 0 100px;
+}

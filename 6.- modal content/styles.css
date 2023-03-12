@@ -250,3 +250,10 @@ Modal
   color: var(--clr-red-light);
   transform: scale(1.3);
 }
+nav ul {
+  position: absolute;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  margin: 20px 0 0 100px;
+}

@@ -138,8 +138,10 @@ p {
 /*  global classes */
 
 .btn {
+  z-index: 1;
+  position: absolute;
   text-transform: uppercase;
-  background: transparent;
+  background: white;
   color: var(--clr-black);
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
@@ -154,6 +156,12 @@ p {
 .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
+}
+.btn a {
+  color: var(--clr-black);
+}
+.btn a:hover {
+  color: var(--clr-white);
 }
 /* section */
 .section {

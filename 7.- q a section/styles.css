@@ -246,3 +246,10 @@ Questions
 .show-text .plus-icon {
   display: none;
 }
+/* buttons to go back */
+nav ul {
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  margin: 20px 0 0 100px;
+}
