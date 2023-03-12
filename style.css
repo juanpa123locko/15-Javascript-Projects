@@ -232,7 +232,7 @@ article a .icon {
 /* using the has() relational pseudo selector to update our custom properties */
 article:has(:hover, :focus) {
   --img-scale: 1.1;
-  --title-color: #28666e;
+  --title-color: #f15025;
   --link-icon-translate: 0;
   --link-icon-opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -242,12 +242,6 @@ article:has(:hover, :focus) {
 /************************ 
 Generic layout (demo looks)
 **************************/
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 body {
   margin: 0;
@@ -307,4 +301,12 @@ body {
   position: absolute;
   white-space: nowrap;
   width: 1px;
+}
+
+/* span whith blue color */
+.blue-color {
+  color: #28666e;
+}
+.orange-color {
+  color: #f15025;
 }
