@@ -129,6 +129,24 @@ p {
   }
 }
 /*  global classes */
+/* navbar */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  font-size: 2rem;
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+nav ul a:hover {
+  color: aqua;
+}
 
 /* section */
 .section {
@@ -158,7 +176,7 @@ Counter
 */
 
 main {
-  min-height: 100vh;
+  min-height: 89vh;
   display: grid;
   place-items: center;
 }

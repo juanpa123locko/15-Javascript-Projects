@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 nav {
   background-color: #000;
@@ -59,7 +60,7 @@ body.open .background {
   height: 72px;
   padding-left: 20px;
   padding-right: 72px;
-  background: #19191c;
+  background: #3a6351;
   color: #f9f9f9;
 }
 
@@ -212,9 +213,12 @@ article a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #28666e;
+  color: #83bd75;
+  transition: color 0.3s ease-out;
 }
-
+article a:hover {
+  color: #3a6351;
+}
 article a:focus {
   outline: 1px dotted #28666e;
 }
@@ -232,7 +236,7 @@ article a .icon {
 /* using the has() relational pseudo selector to update our custom properties */
 article:has(:hover, :focus) {
   --img-scale: 1.1;
-  --title-color: #f15025;
+  --title-color: #e48257;
   --link-icon-translate: 0;
   --link-icon-opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -249,7 +253,7 @@ body {
   font-family: "Figtree", sans-serif;
   font-size: 1.2rem;
   line-height: 1.6rem;
-  background-image: linear-gradient(45deg, #7c9885, #b5b682);
+  background-color: #f2edd7;
   min-height: 100vh;
 }
 
