@@ -62,8 +62,12 @@ body.open .background {
   padding-right: 72px;
   background: #3a6351;
   color: #f9f9f9;
+  transition: 0.5s;
 }
-
+.navbar-transparent {
+  translate: 0 -100px;
+  transition: 0.5s;
+}
 .navbar > button {
   font-size: 28px;
 }
@@ -313,4 +317,13 @@ body {
 }
 .orange-color {
   color: #f15025;
+}
+.backtotopbutton {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  background: var(--clr-secondary);
+  width: 2rem;
+  height: 2rem;
 }

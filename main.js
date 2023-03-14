@@ -11,3 +11,13 @@ links.forEach(link => {
         body.classList.remove('open');
     });
 });
+// navbar transparent when scroll down
+const navbar = document.querySelector('.navbar');
+const navbarHeight = navbar.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+    if (window.scrollY > navbarHeight) {
+        navbar.classList.add('navbar-transparent');
+    } else {
+        navbar.classList.remove('navbar-transparent');
+    }
+});
