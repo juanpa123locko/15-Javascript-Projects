@@ -33,3 +33,11 @@ document.addEventListener('scroll', () => {
         backtotopbutton.classList.remove('visiblebutton');
     }
 });
+
+window.addEventListener('load', () => {
+    AOS.init({
+        duration: 500,
+        // once: true,
+        mirror: true,
+    });
+});
