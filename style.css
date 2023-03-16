@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -60,8 +61,8 @@ body.open .background {
   height: 72px;
   padding-left: 20px;
   padding-right: 72px;
-  background: #3a6351;
-  color: #f9f9f9;
+  background: #6faaff;
+  color: #f6f1f1;
   transition: 0.5s;
 }
 .navbar-transparent {
@@ -151,13 +152,13 @@ body.open .menu > a {
 .menu a:hover {
   transform: scale(1.1);
   transition: all 0.3s;
-  color: #7c9885;
+  color: #19a7ce;
 }
 
 /* Cards! */
 article {
   --img-scale: 1.001;
-  --title-color: black;
+  --title-color: #146c94;
   --link-icon-translate: -20px;
   --link-icon-opacity: 0;
   position: relative;
@@ -209,14 +210,14 @@ article a {
   display: inline-flex;
   align-items: center;
   text-decoration: none;
-  color: #83bd75;
+  color: #28666e;
   transition: color 0.3s ease-out;
 }
 article a:hover {
-  color: #3a6351;
+  color: #62cdff;
 }
 article a:focus {
-  outline: 1px dotted #28666e;
+  outline: 1px dotted #1980b0;
 }
 
 article a .icon {
@@ -232,7 +233,7 @@ article a .icon {
 /* using the has() relational pseudo selector to update our custom properties */
 article:has(:hover, :focus) {
   --img-scale: 1.1;
-  --title-color: #e48257;
+  --title-color: #19a7ce;
   --link-icon-translate: 0;
   --link-icon-opacity: 1;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -245,7 +246,6 @@ Generic layout (demo looks)
 
 body {
   margin: 0;
-  padding: 48px 0;
   font-family: "Figtree", sans-serif;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -260,7 +260,7 @@ body {
   padding-inline: 24px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
-  margin-top: 50px;
+  margin-top: 90px;
 }
 
 @media screen and (max-width: 900px) {
@@ -327,14 +327,14 @@ body {
 }
 
 /* footer */
-
 a {
   text-decoration: none;
 }
-
 footer {
-  color: #e6f0ff;
-  background-color: #333;
+  margin-top: 100px;
+  color: #333;
+  background-color: #e6f0ff;
+  /* position: fixed; */
   bottom: 0;
 }
 
@@ -369,7 +369,7 @@ ul li {
 }
 
 ul li a {
-  color: #e6f0ff;
+  color: #333;
   font-size: 1rem;
 }
 

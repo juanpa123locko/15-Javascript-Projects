@@ -11,11 +11,11 @@ btn.addEventListener('click', function () {
     console.log(randomNumber);
     // quiero que si el fondo es negro haga msi letras blancas
     if (colors[randomNumber] === 9) {
-        color.style = "font-size: 2rem; font-weight: bold; color: white;";
+        document.body.style = "font-size: 2rem; font-weight: bold; color: white;";
     }
 
-
-    document.body.style.backgroundColor = colors[randomNumber];
+const backgroundColor = colors[randomNumber];
+    document.body.style.backgroundColor = backgroundColor;
     color.style = "font-size: 2rem; font-weight: bold; color: black;";
     color.textContent = colors[randomNumber];
 });

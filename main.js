@@ -16,6 +16,7 @@ const navbar = document.querySelector('.navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 const navbarburger = document.querySelector('.navbar-burger');
 document.addEventListener('scroll', () => {
+    console.log(window.scrollY);
     if (window.scrollY > navbarHeight) {
         navbar.classList.add('navbar-transparent');
         navbarburger.classList.add('navbar-burger-dark');
@@ -24,7 +25,7 @@ document.addEventListener('scroll', () => {
         navbarburger.classList.remove('navbar-burger-dark');
     }
 });
-
+// back to top button 
 const backtotopbutton = document.querySelector('.backtotopbutton');
 document.addEventListener('scroll', () => {
     if (window.scrollY > 600) {
@@ -33,7 +34,7 @@ document.addEventListener('scroll', () => {
         backtotopbutton.classList.remove('visiblebutton');
     }
 });
-
+// AOS animation library
 window.addEventListener('load', () => {
     AOS.init({
         duration: 500,
@@ -41,3 +42,7 @@ window.addEventListener('load', () => {
         mirror: true,
     });
 });
+// get full year footer
+const copyyear = document.querySelector('.copyright');
+const currentyear = new Date().getFullYear();
+copyyear.innerHTML = `© ${currentyear} All Rights Reserved`
